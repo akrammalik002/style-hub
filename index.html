@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Style-Hub Mens Wear</title>
+    <title>Style-Hub Men's Wear</title>
 </head>
 <body>
+   <header>
     <h1>Welcome to Our Style-Hub Men's Wear </h1>
     <p>Discover Your Style. Experience Luxury.</p>
     <nav> 
@@ -15,12 +16,21 @@
         <a href="footwear.html">Footwear</a>
         <a href="new-arrivals.html">New Arrivals</a>
     </nav>
+    </header>
+    <main>
+      <section>
     <h2>Our Latest Collection</h2>
     <p>Explore our <strong>premium fashion collection</strong>.</p>
+    </section>
+    <section>
     <h2>Men's New Arrivals</h2>
     <p><strong>Premium Quality</strong></p>
+    </section>
+    <section>
     <h3>Featured Products</h3>
     <p>Find stylish clothing and footwear for every occasion.</p>
+     </section>
+     <section>
      <h2>Men's Fashion Categories</h2>
      <ul>
         <li>Shirts</li>
@@ -31,6 +41,8 @@
         <li>Formal Shoes</li>
         <li>Sandals</li>
      </ul>
+     </section>
+     <section>
      <h2>How to Book Your Product</h2>
      <ol>
         <li>Choose your favourite product.</li>
@@ -41,12 +53,100 @@
      <h2>Payment Options</h2>
      <ul>
         <li>Cash on Delivery</li>
-        <li> Google pay (G-pay)</li>
-        <li>Phone pay</li>
+        <li>Google pay (Gpay)</li>
+        <li>PhonePe</li>
      </ul>
+     </section>
+
+      <section>
      <h2>Featured Product</h2>
      <img src="image/shirt.jpeg" alt="Premium Men's shirt" width="250">
      <img src="image/t-shirts.jpeg" alt="Men's T-Shirts" width="220">
+     </section>
+     <section>
+      <h2>Customer Booking Form</h2>
+      <form>
 
+         <!-- Customer Name  -->
+         <label for="customer-name">Full Name:</label>
+         <input type="text"
+         id="customer-name"
+         name="customerName"
+         placeholder="Enter your Full Name"
+         required>
+         <!-- Customer Email -->
+          <br>
+         <label for="customer-email">Email Address:</label>
+         <input type="email"
+         id="customer-email"
+         name="customerEmail"
+         placeholder="Enter your email"
+         required>
+         <br>
+         <!-- Customer Phone Number -->
+         <label for="phone">Phone Number:</label>
+         <input type="tel"
+         id="phone"
+         name="phone"
+         placeholder="Enter your Mobile Number"
+         required>
+         <br>
+         <!-- Product Size -->
+          <label for="size">Select Size:</label>
+          <select name="size" id="size" required>
+            <option value="">Choose your size</option>
+            <option value="S">Small</option>
+            <option value="M">Medium</option>
+            <option value="L">Large</option>
+            <option value="XL">Extra Large</option>
+            <option value="XXL">XXL</option>
+          </select>
+          <br>
+          <!-- product colour -->
+           <label for="colour">Select Colour:</label>
+           <select name="colour" id="colour" required>
+           <option value="">Choose your Colour</option>
+           <option value="Black">Black</option>
+           <option value="White">White</option>
+           <option value="Blue">Blue</option>
+           <option value="Beige">Beige</option>
+           <option value="grey">Grey</option>
+           <option value="sand">Sand</option>
+           </select>
+           <br>
+           <!-- Booking Option -->
+            <h3>Choose Booking Option:</h3>
+            <input type="radio"
+            id="store-payment"
+            name="booking"
+            value="Pay at Store" required>
+            <label for="store-payment">Reserve Now, Pay at Store</label>
+            <input type="radio"
+            id="deposit"
+            name="booking"
+            value="Deposit Booking">
+            <label for="deposit">Deposit Booking</label>
+            <input type="radio"
+            id="online-payment"
+            name="booking"
+            value="Full Online-Payment">
+            <label for="online-payment"> Full Online-Payment</label>
+            <br>
+            <!-- Customer Message -->
+             <label for="message"> Additional Message:</label>
+             <br>
+             <textarea name="message" id="message" placeholder="Write your message here"
+             rows="4"></textarea>
+             <!-- submit Button -->
+              <br>
+              <button type="submit">Submit Booking</button>
+         </form>
+     </section>
+     </main>
+     <footer>
+      <h3>Style-Hub Men's Wear</h3>
+      <p>Thank you for visiting Style-Hub. Discover Your Style. Experience Luxury.</p>
+      <p>Contact: stylehubsupportteam@gmail.com</p>
+     </footer>
 </body>
 </html>
